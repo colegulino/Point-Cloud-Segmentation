@@ -1,0 +1,47 @@
+Statistics 
+  1001 -- undet -- 18333 
+  1002 -- linear_misc -- 769 
+  1003 -- surf_misc -- 502 
+  1101 -- wire_bundle -- 4970 
+  1102 -- isolated_wire -- 2294 
+  1103 -- utility_pole -- 5927 
+  1104 -- crossarm -- 616 
+  1105 -- support_wire -- 45 
+  1107 -- lamp_support -- 340 
+  1108 -- transformer -- 26 
+  1109 -- fire_hydrant -- 86 
+  1110 -- post -- 1237 
+  1111 -- sign -- 2977 
+  1112 -- pylon -- 8 
+  1113 -- bench -- 384 
+  1114 -- lamp -- 359 
+  1115 -- traffict_lights -- 508 
+  1116 -- traffic_lights_support -- 512 
+  1117 -- garbage -- 64 
+  1118 -- crosswalk_light -- 88 
+  1119 -- parking_meter -- 108 
+  1200 -- load_bearing -- 92888 
+  1202 -- ground -- 3171 
+  1203 -- paved_road -- 935484 
+  1205 -- curb -- 138 
+  1206 -- walkway -- 20849 
+  1300 -- foliage -- 294833 
+  1301 -- grass -- 11319 
+  1302 -- small_trunk -- 977 
+  1303 -- large_trunk -- 2319 
+  1305 -- thick_branch -- 284 
+  1306 -- shrub -- 7991 
+  1400 -- facade -- 114831 
+  1401 -- wall -- 12443 
+  1402 -- stairs -- 301 
+  1408 -- fence -- 749 
+  1409 -- gate -- 129 
+  1410 -- ceiling -- 485 
+  1411 -- facade_ledge -- 2436 
+  1412 -- column -- 1822 
+  1413 -- mailbox -- 155 
+  1500 -- human -- 237 
+  1501 -- vehicle -- 70401 
+  9999 -- legacy -- 230 
+  ----------------
+  Total -- 1614625 
