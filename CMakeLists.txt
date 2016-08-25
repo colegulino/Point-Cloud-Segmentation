@@ -24,7 +24,13 @@ target_link_libraries(render_utils
 					  ${PCL_LIBRARIES}
 					 )
 
+# Add library for file_utils
+add_library(file_utils
+			SHARED
+			 src/file_utils.cpp)
+
 # Link libraries for main file
 target_link_libraries(point_cloud_seg 
 					  render_utils
+					  file_utils
 					  )

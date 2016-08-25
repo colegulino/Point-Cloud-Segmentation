@@ -16,7 +16,23 @@ std::shared_ptr<pcl::visualization::PCLVisualizer>
 	viewer->setBackgroundColor(0,0,0);
 	pcl::visualization::PointCloudColorHandlerRGBField<pcl::PointXYZRGB> rgb(point_cloud);
 	viewer->addPointCloud<pcl::PointXYZRGB>(point_cloud, rgb, "sample cloud");
-	viewer->setPointCloudRenderingProperties(pcl::visualization::PCL_VISUALIZER_POINT_SIZE, 3, "sample cloud");
+	viewer->setPointCloudRenderingProperties(pcl::visualization::PCL_VISUALIZER_POINT_SIZE, 
+											 3, 
+											 "sample cloud");
+	viewer->addCoordinateSystem(1.0);
+	viewer->initCameraParameters();
+	return viewer;
+}
+
+std::shared_ptr<pcl::visualization::PCLVisualizer>
+	get_simple_viewer(const pcl::PointCloud<pcl::PointXYZ>::Ptr& point_cloud)
+{
+	auto viewer = std::make_shared<pcl::visualization::PCLVisualizer>("3D Viewer");
+	viewer->setBackgroundColor(0, 0, 0);
+	viewer->addPointCloud<pcl::PointXYZ>(point_cloud, "Point Cloud");
+	viewer->setPointCloudRenderingProperties(pcl::visualization::PCL_VISUALIZER_POINT_SIZE, 
+											 1, 
+											 "Point Cloud");
 	viewer->addCoordinateSystem(1.0);
 	viewer->initCameraParameters();
 	return viewer;
