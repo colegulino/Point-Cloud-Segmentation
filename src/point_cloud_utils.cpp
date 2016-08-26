@@ -6,15 +6,20 @@
 // STL Libraries
 #include <sstream>
 #include <iterator>
+#include <random>
 
 namespace point_cloud_utils
 {
 
-std::vector<std::string> split_string_spaces(const std::string& s)
+void populate_random_rgb(RGB_info& info)
 {
-	std::istringstream iss(s);
+	std::random_device rd;
+	std::mt19937 gen(rd());
+	std::uniform_int_distribution<int> uni(0, 255);
 
-	return {std::istream_iterator<std::string>{iss}, std::istream_iterator<std::string>{}};
+	info.r = uni(gen);
+	info.g = uni(gen);
+	info.b = uni(gen);
 }
 
 }
