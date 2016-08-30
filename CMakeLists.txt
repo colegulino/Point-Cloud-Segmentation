@@ -38,8 +38,17 @@ target_link_libraries(file_utils
 					  point_cloud_utils
 					 )
 
+# Add library for kdtree
+add_library(kdtree
+			SHARED
+			 src/kdtree.cpp)
+target_link_libraries(kdtree
+					  point_cloud_utils
+					 )
+
 # Link libraries for main file
 target_link_libraries(point_cloud_seg 
 					  render_utils
 					  file_utils
+					  kdtree
 					  )

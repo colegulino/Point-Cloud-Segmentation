@@ -7,6 +7,8 @@
 #include <sstream>
 #include <iterator>
 #include <random>
+#include <algorithm>
+#include <iostream>
 
 namespace point_cloud_utils
 {
